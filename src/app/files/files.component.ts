@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FilesService } from '../files.service';
+import { FilesService } from './files.service';
 
 @Component({
   selector: 'app-files',

@@ -2,23 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
-import { FilesService } from './files.service';
+import { FilesService } from './files/files.service';
 import { FilesComponent } from './files/files.component';
 
+import { LoginModule } from './login/login.module';
+import { LoginComponent } from './login/login.component';
 
-const ROUTES = [
+export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'files',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
-    path: 'files',
-    component: FilesComponent
+    path: 'login',
+    component: LoginComponent
   }
 ];
 
@@ -31,7 +33,8 @@ const ROUTES = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(routes),
+    LoginModule
   ],
   providers: [FilesService],
   bootstrap: [AppComponent]

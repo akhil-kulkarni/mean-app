@@ -1,0 +1,64 @@
+.sign-in {
+  width: 400px;
+}
+.sign-in-form{
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.outer-box {
+	border-radius: 10px;
+	border: 5px solid rgba(255, 255, 255, 0.9);
+	float: left;
+}
+.inner-box {
+  /*background: whitesmoke;*/
+  /*opacity: 0.97;*/
+  color: #fff;
+  border-radius: 2px;
+  float: left;
+}
+
+.sub-btn-wrapper {
+  width: 100%;
+  padding: 10px;
+}
+.sub-btn-div {
+  width: 100px;
+  margin: auto;
+}
+.sub-btn {
+  width: 100%;
+}
+
+
+.si-input-text {
+  float: left;
+  width: 100%;
+}
+.si-input-text input {
+  opacity: 0.9;
+}
+
+.login-links-wrapper div {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.login-links-wrapper div:nth-child(1) {
+  float: left;
+}
+
+.login-links-wrapper div:nth-child(2) {
+  float:right;
+}
+
+.login-links-wrapper a{
+  text-decoration: none;
+  color: white;
+  cursor: hand;
+}
+
+.login-links-wrapper a:hover {
+  color: orange;
+}

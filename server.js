@@ -1,5 +1,6 @@
 // Get dependencies
 const express = require('express');
+const compression = require('compression')
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
@@ -8,6 +9,8 @@ const bodyParser = require('body-parser');
 const api = require('./server/routes/api');
 
 const app = express();
+
+app.use(compression());
 
 const db = require('./server/db/db.js');
 

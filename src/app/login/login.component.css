@@ -1,0 +1,21 @@
+.root{
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+.app-sign-in-wrapper{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*padding-left: 10px;*/
+  min-height: 100vh;
+}
+.home-bg-img {
+  background: #000 url("../assets/images/longboarding.jpg") no-repeat fixed center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}

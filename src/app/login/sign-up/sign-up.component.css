@@ -1,0 +1,42 @@
+:host {
+  width: 100%;
+  /*float: left;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-wrapper{
+  width: 90%;
+  margin: auto;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-form-wrapper{
+  color: #fff;
+  width: 100%;
+}
+
+.sign-up-form-inner, .su-inputs-wrapper, .su-btns-wrapper {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.su-btns-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.su-btns-wrapper .btn {
+  width: 200px;
+}
+
+.su-input-text {
+  opacity: 0.9;
+}
